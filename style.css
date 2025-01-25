@@ -4,7 +4,7 @@
 #container{
     border: 2px solid black;
     width: 35vw;
-    height: 60vh;
+    height: 65vh;
     margin: 10%  0 0 30%;
     border-radius: 20px;
     background-color:darkkhaki;
@@ -21,12 +21,11 @@
     font-weight: 800;
 }
 #button{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 5px;
-    justify-content: center;
-    margin-top: 10px;
+    display: grid;
+    margin: 5%;
+    grid-template-columns: repeat(4 ,1fr);
+    grid-template-rows: repeat(5,1fr);
+    row-gap: 4%;
 }
 .btn{
     border: 2px solid black;
@@ -40,6 +39,7 @@
     font-weight: 700; 
 }
 .btn:hover{
-    background-color:cadetblue;
+    background-color:rgb(211, 234, 235);
+    color: green;
     font-size: 1.5rem;
 }
