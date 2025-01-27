@@ -36,7 +36,15 @@ window.addEventListener("keydown",(event)=>{
     if(event.key === "Enter"){
         let result = eval(string);
         input.value = result;
-       
+    }
+    else if(event.key === "Delete"){
+      // string = event.key;
+      string='';
+      input.value = string;
+    }
+    else if(event.key === "Backspace"){
+      string = string.substring(0,string.length-1);
+      input.value = string;
     }
     else{
         string+=event.key;
